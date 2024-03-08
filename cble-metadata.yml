@@ -1,0 +1,14 @@
+name: provider-example
+description: Just an example provider
+author: YOUR NAME <github.com/YOUR-USERNAME>
+version: v0.0.0
+
+type: docker # docker, shell
+
+docker:
+  dockerfile: Dockerfile
+  cmd: ./provider # the ID will be passed as the last positional argument
+# shell:
+#   prebuild_cmd: <commands to install proper go version>
+#   build_cmd: go build -o provider .
+#   exec_cmd: ./provider # the ID will be passed as the last positional argument
